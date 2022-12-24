@@ -142,7 +142,6 @@ body {
   transition: all 0.3s ease;
   border: 8px solid white;
 }
-
 .item {
   position: absolute;
   display: none;
@@ -198,7 +197,6 @@ footer {
 .footernav-color:hover {
   color: #cbad80;
 }
-
 .fa-twitter {
   color: aqua;
   font-size: 20px;
@@ -222,13 +220,49 @@ footer {
   color: var(--color2);
   font-size: 1rem;
   font-family: ;
+  margin-bottom: 40px;
 }
 /* about-us */
 .about-us {
   margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  
 }
 .aboutus-wraper {
+  max-width: 1300px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly; 
+}
+.aboutus-right {
+  display: flex;
+  flex-direction: column;
+  
+
+  max-width: 300px;
+  width: 100%;
+  gap: 30px;
+}
+.image-right {
+  width: 70%;
+  cursor: pointer;
+}
+.image-right:hover {
+  width: 80%;
+  transition: all 0.5s linear;
+  border-color: var(--hovercolor);
+}
+.aboutus-left {
+  margin-top: 70px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  gap: 40px;
+}
+.video {
+  margin-left: 11%; 
 }
