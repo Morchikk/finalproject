@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width:1250px) {
   .aboutus-wraper {
     max-width: 1100px;
@@ -31,7 +38,10 @@
   max-width: 500px;
   width: 90%;
 }
-
+ .email-phone {
+  max-width: 600px;
+  width: 100px;
+ }
 }
 @media (max-width:1000px) {
   .hamburger {
@@ -41,20 +51,31 @@
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1){
-    transform: translateY(8px)rotate(45deg);
+    -webkit-transform: translateY(8px)rotate(45deg);
+        -ms-transform: translateY(8px)rotate(45deg);
+            transform: translateY(8px)rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3){
-    transform: translateY(-8px)rotate(-45deg);
+    -webkit-transform: translateY(-8px)rotate(-45deg);
+        -ms-transform: translateY(-8px)rotate(-45deg);
+            transform: translateY(-8px)rotate(-45deg);
   }
   .nav-menu {
     position: fixed;
     left:-100%;
     top: 20px;
     gap: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(52,52,52,1)));
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
     width: 100%;
     text-align: center;
+    -webkit-transition:0.3s ;
+    -o-transition:0.3s ;
     transition:0.3s ;
   }
   .nav-item {
@@ -70,6 +91,8 @@
   .title-container {
       max-width: 700px;
       width: 70%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-left: 13%;
       margin-top:40px;  
@@ -84,22 +107,37 @@
       position: fixed;
       left:-100%;
       top: px;
-      flex-direction:column;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:column;
+              flex-direction:column;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(52,52,52,1)));
+      background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
       background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
       width: 100%;
       text-align: center;
+      -webkit-transition:0.3s ;
+      -o-transition:0.3s ;
       transition:0.3s ;
       padding-left: 30px;
     }
     .title-container {
       max-width: 700px;
       width: 70%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-left: 13%;
       margin-top:60px;
     }
     .galery-title {
       margin-top: 11%;
+    }
+    .email-phone {
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
     }
 }
 @media (max-width:900px) {
@@ -117,6 +155,16 @@
   width: 100%;
 }
 }
+@media screen and (max-width: 880px){
+	.contact-box{
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+  
+}
 
 @media (max-width:855px) {
   .aboutus-wraper {
@@ -133,6 +181,7 @@
   width: 80%;
   margin-left: 30px;
 }
+
 }
 
 @media (max-width:750px) {
@@ -149,12 +198,30 @@
   max-width: 230px;
   width: 90%;
 }
+.galery-title {
+  margin-top:16%;
+}
+.contact-title {
+  margin-top: 16%;
+}
+.maps {
+  max-width: 600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 }
 @media (max-width:655px) {
   .aboutus-wraper {
-    max
-    display: flex;
-    flex-wrap: wrap;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .gallery-card {
   max-width: 500px;
@@ -184,16 +251,37 @@
     position: fixed;
     left:-100%;
     top: px;
-    flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(52,52,52,1)));
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
     width: 100%;
     text-align: center;
+    -webkit-transition:0.3s ;
+    -o-transition:0.3s ;
     transition:0.3s ;
     padding-left: 26px;
+    z-index: 8;
   }
   .title-container {
     margin-top: 70px;
   }  
+  .galery-title {
+    margin-top:18%;
+  }
+  .contact-title {
+    margin-top: 18%;
+  }
+  .maps {
+    max-width: 300px;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   }
 @media (max-width:465px) {
   .carousel-container {
@@ -206,6 +294,12 @@
   max-width: 400px;
   width: 100%;
 }
+.galery-title {
+  margin-top:20%;
+}
+.contact-title {
+  margin-top: 20%;
+}
 }
   @media (max-width:415px){
 
@@ -213,11 +307,21 @@
       position: fixed;
       left:-100%;
       
-      flex-direction:column;
+      -webkit-box-orient:vertical;
+      
+      -webkit-box-direction:normal;
+      
+          -ms-flex-direction:column;
+      
+              flex-direction:column;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(52,52,52,1)));
+      background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
       background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%);
       width: 100%;
       top:px;
       text-align: center;
+      -webkit-transition:0.3s ;
+      -o-transition:0.3s ;
       transition:0.3s ;
       padding-left: 70px;
     }
@@ -234,11 +338,21 @@
     max-width: 320px;
     width: 90%;
   }
+  .galery-title {
+    margin-top:27%;
+  }
+  .contact-title {
+    margin-top: 27%;
+  }
   }
   @media (max-width:340px) {
       .footer-container {
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
          gap: 10px;
               }
       .carousel-container {
