@@ -482,6 +482,7 @@ footer {
   align-items: center;
   padding: 20px 100px;
 }
+
 .container:after {
   content: "";
   position: absolute;
@@ -489,13 +490,8 @@ footer {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/image/Archform.jpg") no-repeat center;
-  background-size: cover;
-  -webkit-filter: blur(50px);
-  filter: blur(50px);
   z-index: -1;
 }
-
 .contact-box {
   max-width: 850px;
   display: -ms-grid;
@@ -542,7 +538,7 @@ h2:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: var(--color1);
+  background-color:var(--color1);
 }
 
 .field {
