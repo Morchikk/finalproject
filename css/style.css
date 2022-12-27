@@ -8,12 +8,11 @@
 
 /* header */
 body {
-  background-color: #cfedea;
+  background-color: #797979;
 }
 .logo-container {
   margin-left: 20%;
 }
-
 
 .navbar {
   display: flex;
@@ -84,14 +83,18 @@ body {
 .title-wraper h1 {
   font-size: var(--fontsize2);
   font-weight: 500;
+  font-family: "Chivo Mono", monospace;
+  color: var(--color2);
 }
 .title-wraper h3 {
-  font-size: 1.2rem;
-  color: var();
-  font-family: ;
+  font-size: 1.5rem;
+  color: var(--color2);
+  font-family: "Sevillana", cursive;
 }
 .title-wraper p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: var(--color2);
+  font-family: "Chivo Mono", monospace;
 }
 /* slide section */
 .slider-section {
@@ -160,8 +163,8 @@ footer {
     rgba(0, 0, 0, 1) 0%,
     rgba(52, 52, 52, 1) 100%
   );
-  display: flex;
-  justify-content: center;
+ display: flex;
+ justify-content:center ;
 }
 .footer-container {
   max-width: 1088px;
@@ -228,19 +231,16 @@ footer {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  
 }
 .aboutus-wraper {
   max-width: 1300px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 }
 .aboutus-right {
   display: flex;
   flex-direction: column;
-  
-
   max-width: 300px;
   width: 100%;
   gap: 30px;
@@ -254,6 +254,12 @@ footer {
   transition: all 0.5s linear;
   border-color: var(--hovercolor);
 }
+.img-p {
+  color: var(--color1);
+  font-size: var(--fontsize1);
+  font-family: "Sevillana", cursive;
+  font-weight: 800;
+}
 .aboutus-left {
   margin-top: 70px;
   display: flex;
@@ -263,6 +269,52 @@ footer {
   width: 100%;
   gap: 40px;
 }
+.about-left-title {
+  color: var(--color1);
+  font-family: "Sevillana", cursive;
+  font-size: var(--fontsize2);
+}
+.about-left-text {
+  color: var(--color2);
+  font-family: "Chivo Mono", monospace;
+  font-size: var(--fontsize1);
+}
 .video {
-  margin-left: 11%; 
+  margin-left: 12%;
+}
+/* motorcycle-page */
+.galery-title{
+  margin-top:30px;
+  margin-left: 15%;
+}
+.galery-title p {
+  color: var(--color2);
+  font-size: var(--fontsize1);
+  font-family: "Chivo Mono", monospace;
+}
+.gallery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.gallery-img img{
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+}
+.btn-gallery {
+  background-color:#0d0c0c; 
+  cursor: pointer; 
+}
+.btn-gallery :hover {
+  background-color:#db5050 ;
+}
+.btn-text {
+  font-size: var(--fontsize1);
+  font-family: "Chivo Mono", monospace;
+  color: var(--color2);
 }
