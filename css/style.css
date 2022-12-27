@@ -511,7 +511,7 @@ footer {
 }
 
 .left {
-  background: url("https://pbs.twimg.com/profile_images/824424667460931585/d4vsRQH5_400x400.jpg") no-repeat center;
+  background-image: url("https://pbs.twimg.com/profile_images/824424667460931585/d4vsRQH5_400x400.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
