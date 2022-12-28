@@ -467,6 +467,8 @@ footer {
   font-size: 14px;
 }
 /* form contact */
+
+
 .container{
 	position: relative;
 	width: 100%;
@@ -490,7 +492,7 @@ footer {
 	height: 100%;
 	left: 0;
 	top: 0;
-
+	z-index: -1;
 }
 .contact-box{
 	max-width: 850px;
@@ -538,7 +540,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color:var(--color1);
+    background-color:var(--color1) ;
 }
 
 .field{
