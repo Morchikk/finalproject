@@ -413,7 +413,7 @@ footer {
   height: 400px;
 }
 .btn-gallery {
-  background-color: #0d0c0c;
+  background-color: #0d0c0c; 
   cursor: pointer;
 }
 .btn-gallery :hover {
@@ -490,11 +490,7 @@ footer {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/bg.jpg") no-repeat center;
-	background-size: cover;
-	-webkit-filter: blur(50px);
-	        filter: blur(50px);
-	z-index: -1;
+
 }
 .contact-box{
 	max-width: 850px;
