@@ -415,6 +415,12 @@ footer {
 .btn-gallery {
   background-color: #0d0c0c; 
   cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: var(--fontsize1);
+  font-family: "Chivo Mono", monospace;
+  color: var(--color2);
 }
 .btn-gallery :hover {
   background-color: #db5050;
